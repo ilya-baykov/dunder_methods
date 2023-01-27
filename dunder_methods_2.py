@@ -11,3 +11,9 @@ class City:
     def name(self):
         return self.__name
 
+    def __str__(self):
+        return f"Экземпляр класса City - {self.__name}"
+
+
+Vladimir = City("vladimir")
+print(Vladimir)
