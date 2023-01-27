@@ -14,6 +14,7 @@ class City:
     def __str__(self):
         return f"Экземпляр класса City - {self.__name}"
 
+    def __bool__(self):
+        return not self.__name[-1] in ("aeiou")
 
-Vladimir = City("vladimir")
-print(Vladimir)
+
